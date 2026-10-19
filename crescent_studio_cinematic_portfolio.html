@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crescent Studio | Creative Team</title>
+    
+    <!-- Google Fonts: Syne (for avant-garde bold headings), Inter (for clean body text) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="crescent_studio_cinematic_portfolio.js"></script>
+    <link rel="stylesheet" href="crescent_studio_cinematic_portfolio.css">
+</head>
+<body class="relative font-sans antialiased text-brand-offwhite selection:bg-brand-yellow selection:text-brand-navy">
+
+    <!-- Custom Cursor -->
+    <div class="cursor-dot hidden md:block"></div>
+    <div class="cursor-outline hidden md:block"></div>
+
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader-text" id="loader-counter">100%</div>
+    </div>
+
+    <!-- Background Layer for Work Section -->
+    <div id="work-bg-layer"></div>
+
+    <!-- Navigation (scrolls away with the hero) -->
+    <nav class="absolute top-0 left-0 w-full z-50 mix-blend-difference pointer-events-none p-6 md:p-10 flex justify-between items-start">
+        <!-- Top Left: Logo -->
+        <div class="pointer-events-auto">
+            <a href="#hero" class="font-display font-bold text-xl md:text-2xl tracking-tight interactive" data-cursor="hover">Crescent Studio.</a>
+        </div>
+        
+        <!-- Top Right: Menu Links -->
+        <div class="flex flex-col items-end space-y-2 text-sm font-medium tracking-widest uppercase pointer-events-auto">
+            <a href="#services" class="hover:text-brand-yellow transition-colors interactive" data-cursor="hover">Services</a>
+            <a href="#work" class="hover:text-brand-yellow transition-colors interactive" data-cursor="hover">Work</a>
+            <a href="#gallery" class="hover:text-brand-yellow transition-colors interactive" data-cursor="hover">Gallery</a>
+            <a href="#studio" class="hover:text-brand-yellow transition-colors interactive" data-cursor="hover">Studio</a>
+            <a href="#contact" class="hover:text-brand-yellow transition-colors interactive" data-cursor="hover">Contact</a>
+        </div>
+    </nav>
+
+    <main>
+        <!-- HERO SECTION -->
+        <section id="hero" class="relative h-screen w-full flex items-center justify-center overflow-hidden">
+            
+            <!-- Floating Parallax Images (Absolute Positioned) -->
+            <div class="parallax-img z-0 w-48 h-64 md:w-64 md:h-80 opacity-60 top-[15%] left-[10%] md:top-[20%] md:left-[15%]" data-speed="1.5">
+                <img src="files/photos/web/DSCF7995.jpg" alt="Portrait of a man in a worn hat">
+            </div>
+            <div class="parallax-img z-0 w-56 h-72 md:w-72 md:h-96 opacity-40 bottom-[10%] right-[5%] md:bottom-[15%] md:right-[15%]" data-speed="-2">
+                <img src="files/photos/web/DSC_9652.jpg" alt="Two performers embracing on a dark stage">
+            </div>
+            <div class="parallax-img z-0 w-40 h-56 md:w-56 md:h-72 opacity-50 top-[10%] right-[20%] md:top-[15%] md:right-[25%]" data-speed="0.8">
+                <img src="files/photos/web/DSCF4116.jpg" alt="A lone figure crossing a wide city avenue">
+            </div>
+
+            <!-- Central Typography -->
+            <div class="relative z-10 text-center px-4 max-w-6xl mx-auto pointer-events-none">
+                <h1 class="font-display font-bold text-5xl md:text-8xl lg:text-9xl leading-[0.9] tracking-tighter uppercase mb-6 mix-blend-difference">
+                    We build the <br>
+                    <span class="text-brand-light-blue italic text-6xl md:text-9xl lg:text-[10rem]">Story</span>
+                </h1>
+                <p class="font-sans text-lg md:text-2xl font-light text-brand-offwhite/80 max-w-2xl mx-auto mt-8">
+                    You focus on building the company.<br class="hidden md:block"> 
+                    We handle the creative execution around it.
+                </p>
+            </div>
+            
+            <!-- Scroll Indicator -->
+            <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 text-xs uppercase tracking-widest opacity-50 animate-bounce">
+                Scroll to explore
+            </div>
+        </section>
+
+        <!-- MARQUEE SERVICES -->
+        <section class="py-12 border-y border-brand-offwhite/10 overflow-hidden bg-brand-navy">
+            <div class="marquee-wrapper font-display text-4xl md:text-6xl uppercase tracking-tighter text-brand-offwhite/30">
+                <div class="marquee-content">
+                    COMMERCIAL FILMMAKING &nbsp;&mdash;&nbsp; PHOTOGRAPHY &nbsp;&mdash;&nbsp;
+                    COMMERCIAL FILMMAKING &nbsp;&mdash;&nbsp; PHOTOGRAPHY &nbsp;&mdash;&nbsp;
+                </div>
+            </div>
+        </section>
+
+        <!-- SERVICES SECTION -->
+        <section id="services" class="py-32 px-6 md:px-20 bg-brand-navy text-brand-offwhite relative z-10">
+            <div class="max-w-7xl mx-auto">
+                <p class="text-xs uppercase tracking-widest text-brand-yellow mb-8">What We Offer</p>
+                <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-8 mb-16">
+                    <h2 class="font-display font-bold text-5xl md:text-7xl uppercase tracking-tighter leading-[0.95]">
+                        Made to move<br><span class="text-brand-light-blue italic">people.</span>
+                    </h2>
+                    <p class="max-w-md text-lg font-light text-brand-offwhite/70 leading-relaxed">
+                        Thoughtful film and photography for brands with a story to tell.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 border-t border-brand-offwhite/20">
+                    <article class="py-10 md:py-12 md:pr-12 border-b md:border-b-0 md:border-r border-brand-offwhite/20">
+                        <p class="font-display text-sm text-brand-yellow tracking-widest mb-10">01 / FILM</p>
+                        <h3 class="font-display font-bold text-3xl md:text-4xl uppercase tracking-tight mb-5">Commercial Filmmaking</h3>
+                        <p class="text-base md:text-lg font-light text-brand-offwhite/70 leading-relaxed mb-8">
+                            Cinematic commercial films that bring your product, people, and purpose to life.
+                        </p>
+                        <p class="text-xs uppercase tracking-widest text-brand-offwhite/40">Brand films &nbsp;·&nbsp; Product stories &nbsp;·&nbsp; Campaigns</p>
+                    </article>
+
+                    <article class="py-10 md:py-12 md:pl-12">
+                        <p class="font-display text-sm text-brand-light-blue tracking-widest mb-10">02 / PHOTO</p>
+                        <h3 class="font-display font-bold text-3xl md:text-4xl uppercase tracking-tight mb-5">Photography</h3>
+                        <p class="text-base md:text-lg font-light text-brand-offwhite/70 leading-relaxed mb-8">
+                            Intentional imagery to give your brand a distinctive, human point of view.
+                        </p>
+                        <p class="text-xs uppercase tracking-widest text-brand-offwhite/40">Product &nbsp;·&nbsp; Campaign &nbsp;·&nbsp; People</p>
+                    </article>
+                </div>
+                <a href="#contact" class="inline-block mt-10 text-sm uppercase tracking-widest text-brand-yellow hover:text-brand-light-blue transition-colors interactive" data-cursor="hover">
+                    Have a project in mind? Get in touch <span aria-hidden="true">→</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- WORK SECTION -->
+        <section id="work" class="py-32 px-6 md:px-20 min-h-screen flex flex-col justify-center relative z-10">
+            <div class="max-w-7xl mx-auto w-full">
+                <p class="text-xs uppercase tracking-widest text-brand-yellow mb-12">Selected Projects (03)</p>
+                
+                <div class="flex flex-col w-full border-t border-brand-offwhite/20">
+                    
+                    <!-- Project 1 -->
+                    <a href="#" class="project-item group block py-10 md:py-16 border-b border-brand-offwhite/20 relative overflow-hidden interactive" 
+                       data-cursor="hover" 
+                       data-bg="https://images.unsplash.com/photo-1541348263662-e068362d4941?auto=format&fit=crop&q=80&w=2000"> <!-- Using unspalsh placeholder for cinematic effect -->
+                        <div class="flex flex-col md:flex-row md:items-end justify-between relative z-10 mix-blend-difference">
+                            <div class="mb-4 md:mb-0">
+                                <span class="text-xs md:text-sm font-medium tracking-widest uppercase text-brand-yellow mb-2 block group-hover:translate-x-2 transition-transform">Client Work</span>
+                                <h2 class="font-display font-bold text-5xl md:text-8xl uppercase tracking-tighter group-hover:italic transition-all duration-300">Racewear</h2>
+                            </div>
+                            <div class="text-left md:text-right md:max-w-xs">
+                                <p class="text-sm font-light text-brand-offwhite/70 mb-2">Commercial Filmmaking</p>
+                                <p class="text-xs opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100 hidden md:block">A 60-second commercial film designed to capture the visceral, fast-paced, and gritty reality of the track.</p>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Project 2 -->
+                    <a href="#" class="project-item group block py-10 md:py-16 border-b border-brand-offwhite/20 relative overflow-hidden interactive" 
+                       data-cursor="hover" 
+                       data-bg="https://images.unsplash.com/photo-1544367567-0f2fcb046eb9?auto=format&fit=crop&q=80&w=2000">
+                        <div class="flex flex-col md:flex-row md:items-end justify-between relative z-10 mix-blend-difference">
+                            <div class="mb-4 md:mb-0">
+                                <span class="text-xs md:text-sm font-medium tracking-widest uppercase text-brand-light-blue mb-2 block group-hover:translate-x-2 transition-transform">Self-Initiated Concept</span>
+                                <h2 class="font-display font-bold text-5xl md:text-8xl uppercase tracking-tighter group-hover:italic transition-all duration-300">Aura Water</h2>
+                            </div>
+                            <div class="text-left md:text-right md:max-w-xs">
+                                <p class="text-sm font-light text-brand-offwhite/70 mb-2">Brand Identity & Design</p>
+                                <p class="text-xs opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100 hidden md:block">Visual identity built for a hypothetical pre-seed D2C beverage brand entering a saturated market.</p>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Project 3 -->
+                    <a href="#" class="project-item group block py-10 md:py-16 border-b border-brand-offwhite/20 relative overflow-hidden interactive" 
+                       data-cursor="hover" 
+                       data-bg="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=2000">
+                        <div class="flex flex-col md:flex-row md:items-end justify-between relative z-10 mix-blend-difference">
+                            <div class="mb-4 md:mb-0">
+                                <span class="text-xs md:text-sm font-medium tracking-widest uppercase text-brand-light-blue mb-2 block group-hover:translate-x-2 transition-transform">Self-Initiated Concept</span>
+                                <h2 class="font-display font-bold text-5xl md:text-8xl uppercase tracking-tighter group-hover:italic transition-all duration-300">Trailhead</h2>
+                            </div>
+                            <div class="text-left md:text-right md:max-w-xs">
+                                <p class="text-sm font-light text-brand-offwhite/70 mb-2">Integrated Campaign</p>
+                                <p class="text-xs opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100 hidden md:block">Documentary-informed campaign capturing unpolished moments of friends on a weekend adventure.</p>
+                            </div>
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- PHOTOGRAPHY GALLERY -->
+        <section id="gallery" class="py-32 px-6 md:px-20 bg-brand-navy text-brand-offwhite relative z-10 border-t border-brand-offwhite/10">
+            <div class="max-w-7xl mx-auto">
+                <p class="text-xs uppercase tracking-widest text-brand-yellow mb-8">Photography</p>
+                <h2 class="font-display font-bold text-5xl md:text-7xl uppercase tracking-tighter leading-[0.95] mb-16">
+                    Frames from <span class="text-brand-light-blue italic">the field.</span>
+                </h2>
+
+                <div class="gallery-grid">
+                    <figure class="gallery-item"><img src="files/photos/web/DSC_1223.jpg" alt="Dancers mid-leap on stage under warm light" loading="lazy"></figure>
+                    <figure class="gallery-item"><img src="files/photos/web/DSC_1576.jpg" alt="Man in a striped poncho dancing in a plaza" loading="lazy"></figure>
+                    <figure class="gallery-item"><img src="files/photos/web/700_0624.jpg" alt="Person shielding themselves from the rain with a cardboard box" loading="lazy"></figure>
+                    <figure class="gallery-item"><img src="files/photos/web/DSCF8960.jpg" alt="Fencer with raised foil" loading="lazy"></figure>
+                    <figure class="gallery-item"><img src="files/photos/web/DSC_3384.jpg" alt="Speaker addressing a crowd at a street market" loading="lazy"></figure>
+                    <figure class="gallery-item"><img src="files/photos/web/IMG_7391.jpg" alt="Black and white fencing portrait" loading="lazy"></figure>
+                    <figure class="gallery-item"><img src="files/photos/web/DSC_4523.jpg" alt="Child running through a flock of pigeons" loading="lazy"></figure>
+                    <figure class="gallery-item"><img src="files/photos/web/IMG_1906.jpg" alt="Soccer players battling for the ball" loading="lazy"></figure>
+                    <figure class="gallery-item"><img src="files/photos/web/700_9651.jpg" alt="Street vendors pushing a food cart" loading="lazy"></figure>
+                    <figure class="gallery-item"><img src="files/photos/web/DSCF4886.jpg" alt="Reflection in a cracked glass door" loading="lazy"></figure>
+                    <figure class="gallery-item"><img src="files/photos/web/DSC_3316.jpg" alt="Cyclist weaving through a busy crosswalk" loading="lazy"></figure>
+                    <figure class="gallery-item"><img src="files/photos/web/MDD0259.jpg" alt="Two cyclists riding under a bridge" loading="lazy"></figure>
+                    <figure class="gallery-item"><img src="files/photos/web/DSC_1705.jpg" alt="Canada geese and goslings by a stone bridge" loading="lazy"></figure>
+                    <figure class="gallery-item"><img src="files/photos/web/DSCF4116.jpg" alt="A lone figure crossing a wide city avenue" loading="lazy"></figure>
+                    <figure class="gallery-item"><img src="files/photos/web/DSC_1233.jpg" alt="A duck resting on rushing water" loading="lazy"></figure>
+                    <figure class="gallery-item"><img src="files/photos/web/DSC_3428.jpg" alt="Rabbit sitting in the snow among bare branches" loading="lazy"></figure>
+                    <figure class="gallery-item"><img src="files/photos/web/DSCF7995.jpg" alt="Portrait of a man in a worn hat" loading="lazy"></figure>
+                    <figure class="gallery-item"><img src="files/photos/web/DSC_7775.jpg" alt="Painted lady butterfly on a yellow flower" loading="lazy"></figure>
+                    <figure class="gallery-item"><img src="files/photos/web/DSC_9713.jpg" alt="Moth perched on a leaf at night" loading="lazy"></figure>
+                    <figure class="gallery-item"><img src="files/photos/web/DSC_9652.jpg" alt="Two performers embracing on a dark stage" loading="lazy"></figure>
+                </div>
+            </div>
+        </section>
+
+        <!-- STUDIO SECTION -->
+        <section id="studio" class="py-32 px-6 md:px-20 bg-brand-navy text-brand-offwhite relative z-20 border-t border-brand-offwhite/10">
+            <div class="max-w-5xl mx-auto">
+                <p class="text-xs uppercase tracking-widest text-brand-yellow mb-8">About the Studio</p>
+                <h2 class="font-display font-bold text-4xl md:text-6xl lg:text-7xl leading-[1.1] tracking-tight mb-16">
+                    Built for founders,<br>
+                    <span class="text-brand-light-blue">by founders.</span>
+                </h2>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-16 font-sans text-lg font-light leading-relaxed">
+                    <div>
+                        <p class="mb-6">Early-stage companies are building impressive products, but their public presence often hasn't caught up. Crescent Studio was founded to solve this exact problem.</p>
+                        <p>We are an independent creative studio that functions as your external creative team. Our approach is rooted in authentic, documentary-informed storytelling. Through commercial filmmaking and photography, we believe in showing the human element.</p>
+                    </div>
+                    <div>
+                        <div class="p-8 bg-brand-offwhite/5 border-l-2 border-brand-light-blue">
+                            <h3 class="font-display font-bold text-2xl mb-4 text-brand-offwhite">The Advantage</h3>
+                            <p class="text-base text-brand-offwhite/70">By utilizing a flexible, founder-led collective model, we assemble the exact right emerging creative talent for your specific project. This keeps fixed overhead low for pre-seed and seed-stage startups, while ensuring film and photography share one unified, high-end vision.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <section id="contact" class="py-32 px-6 md:px-20 bg-brand-navy text-brand-offwhite relative z-20 border-t border-brand-offwhite/10">
+            <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-20">
+                
+                <div>
+                    <h2 class="font-display font-bold text-6xl md:text-8xl tracking-tighter mb-6">Let's Talk.</h2>
+                    <p class="text-xl font-light text-brand-offwhite/60 mb-12 max-w-md">
+                        Preparing for a launch, raise, or rebrand? We are ready to build the story.
+                    </p>
+                    <div class="space-y-6">
+                        <div>
+                            <p class="text-xs uppercase tracking-widest text-brand-yellow mb-1">Email</p>
+                            <a href="mailto:hello@crescentstudio.com" class="text-2xl hover:text-brand-light-blue transition-colors interactive" data-cursor="hover">hello@crescentstudio.com</a>
+                        </div>
+                        <div>
+                            <p class="text-xs uppercase tracking-widest text-brand-yellow mb-1">Location</p>
+                            <p class="text-lg text-brand-offwhite/80">Hamilton, NY <span class="text-sm italic opacity-50 block mt-1">Available for travel</span></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sleek Intake Form -->
+                <div class="relative">
+                    <form id="contactForm" class="space-y-8">
+                        <div class="relative z-0 w-full group">
+                            <input type="text" name="name" id="name" class="block py-4 px-0 w-full text-lg bg-transparent border-0 border-b-2 border-brand-offwhite/20 appearance-none focus:outline-none focus:ring-0 focus:border-brand-light-blue peer interactive" placeholder=" " required />
+                            <label for="name" class="absolute text-brand-offwhite/50 duration-300 transform -translate-y-6 scale-75 top-4 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-brand-light-blue peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Your Name</label>
+                        </div>
+                        <div class="relative z-0 w-full group">
+                            <input type="text" name="company" id="company" class="block py-4 px-0 w-full text-lg bg-transparent border-0 border-b-2 border-brand-offwhite/20 appearance-none focus:outline-none focus:ring-0 focus:border-brand-light-blue peer interactive" placeholder=" " required />
+                            <label for="company" class="absolute text-brand-offwhite/50 duration-300 transform -translate-y-6 scale-75 top-4 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-brand-light-blue peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Company / Startup Name</label>
+                        </div>
+                        <div class="relative z-0 w-full group">
+                            <input type="email" name="email" id="email" class="block py-4 px-0 w-full text-lg bg-transparent border-0 border-b-2 border-brand-offwhite/20 appearance-none focus:outline-none focus:ring-0 focus:border-brand-light-blue peer interactive" placeholder=" " required />
+                            <label for="email" class="absolute text-brand-offwhite/50 duration-300 transform -translate-y-6 scale-75 top-4 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-brand-light-blue peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Email Address</label>
+                        </div>
+                        
+                        <button type="submit" class="group relative inline-flex items-center justify-center px-8 py-4 font-bold text-brand-navy bg-brand-offwhite hover:bg-brand-yellow overflow-hidden transition-all duration-300 interactive" data-cursor="hover">
+                            <span class="relative z-10 tracking-widest uppercase text-sm">Send Inquiry</span>
+                        </button>
+                    </form>
+                    
+                    <!-- Success Message -->
+                    <div id="successMessage" class="hidden absolute inset-0 bg-brand-navy flex items-center justify-center border border-brand-light-blue/30 p-8 text-center">
+                        <div>
+                            <h3 class="font-display text-3xl mb-4">Received.</h3>
+                            <p class="text-brand-offwhite/70 font-light">Thank you. We will review your inquiry and reach out shortly to discuss the creative direction.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            
+            <div class="max-w-7xl mx-auto mt-32 pt-8 border-t border-brand-offwhite/10 flex justify-between items-center text-xs tracking-widest text-brand-offwhite/40 uppercase">
+                <p>&copy; <span id="year"></span> Crescent Studio.</p>
+                <p>Hamilton, NY</p>
+                <div class="flex space-x-6">
+                    <a href="#" class="hover:text-brand-offwhite interactive" data-cursor="hover">IG</a>
+                    <a href="#" class="hover:text-brand-offwhite interactive" data-cursor="hover">IN</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+</body>
+</html>
