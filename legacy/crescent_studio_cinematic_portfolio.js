@@ -71,7 +71,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // 3. Hero Parallax Effect
-    const parallaxImages = document.querySelectorAll('.parallax-img');
+    const parallaxElements = document.querySelectorAll('.parallax-img');
     const heroSection = document.getElementById('hero');
 
     heroSection.addEventListener('mousemove', (e) => {
@@ -80,16 +80,16 @@ document.addEventListener('DOMContentLoaded', () => {
         const x = (window.innerWidth / 2 - e.clientX) / 50;
         const y = (window.innerHeight / 2 - e.clientY) / 50;
 
-        parallaxImages.forEach(img => {
-            const speed = parseFloat(img.getAttribute('data-speed')) || 1;
-            img.style.transform = `translate(${x * speed}px, ${y * speed}px)`;
+        parallaxElements.forEach(element => {
+            const speed = parseFloat(element.getAttribute('data-speed')) || 1;
+            element.style.transform = `translate(${x * speed}px, ${y * speed}px)`;
         });
     });
 
     // Reset parallax on mouse leave
     heroSection.addEventListener('mouseleave', () => {
-        parallaxImages.forEach(img => {
-            img.style.transform = 'translate(0px, 0px)';
+        parallaxElements.forEach(element => {
+            element.style.transform = 'translate(0px, 0px)';
         });
     });
 
