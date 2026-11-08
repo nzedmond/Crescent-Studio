@@ -38,7 +38,11 @@ export const services = [
     },
 ];
 
-// Using Unsplash placeholders for the cinematic background effect
+// Selected projects.
+// - `background`: still image behind the list on hover (also the player's poster). Unsplash placeholders for now.
+// - `preview`: short muted loop that plays over the still on hover. Use a small compressed copy in
+//   public/files/videos/web/ (e.g. '/files/videos/web/racewear-preview.mp4'); null = still image only.
+// - `video`: the full film that opens in a player with sound when the project is clicked; null = not clickable.
 export const projects = [
     {
         title: 'Racewear',
@@ -47,7 +51,8 @@ export const projects = [
         discipline: 'Commercial Filmmaking',
         description: 'A 60-second commercial film designed to capture the visceral, fast-paced, and gritty reality of the track.',
         background: 'https://images.unsplash.com/photo-1541348263662-e068362d4941?auto=format&fit=crop&q=80&w=2000',
-        href: '#',
+        preview: null,
+        video: null,
     },
     {
         title: 'Aura Water',
@@ -56,7 +61,8 @@ export const projects = [
         discipline: 'Brand Identity & Design',
         description: 'Visual identity built for a hypothetical pre-seed D2C beverage brand entering a saturated market.',
         background: 'https://images.unsplash.com/photo-1544367567-0f2fcb046eb9?auto=format&fit=crop&q=80&w=2000',
-        href: '#',
+        preview: null,
+        video: null,
     },
     {
         title: 'Trailhead',
@@ -65,7 +71,8 @@ export const projects = [
         discipline: 'Integrated Campaign',
         description: 'Documentary-informed campaign capturing unpolished moments of friends on a weekend adventure.',
         background: 'https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=2000',
-        href: '#',
+        preview: null,
+        video: null,
     },
 ];
 
