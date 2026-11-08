@@ -29,3 +29,7 @@ dist
 # Full-size photo originals; the site only uses the web/ copies
 /public/files/photos/*
 !/public/files/photos/web/
+
+# Compressed web copies of the hero videos are small enough to commit
+!/public/files/videos/web/
+!/public/files/videos/web/*.mp4

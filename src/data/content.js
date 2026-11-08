@@ -10,11 +10,11 @@ export const navLinks = [
 // Hero media, spaced evenly around the orbit in this order
 export const heroMedia = [
     { type: 'image', src: '/files/photos/web/DSCF7995.jpg', alt: 'Portrait of a man in a worn hat' },
-    { type: 'video', src: '/files/videos/Moose_mtCube.mp4' },
+    { type: 'video', src: '/files/videos/web/Moose_mtCube.mp4' },
     { type: 'image', src: '/files/photos/web/DSC_9652.jpg', alt: 'Two performers embracing on a dark stage' },
-    { type: 'video', src: '/files/videos/Moose_nurturing.mp4' },
+    { type: 'video', src: '/files/videos/web/Moose_nurturing.mp4' },
     { type: 'image', src: '/files/photos/web/DSCF4116.jpg', alt: 'A lone figure crossing a wide city avenue' },
-    { type: 'video', src: '/files/videos/Moosee_graphic.mp4' },
+    { type: 'video', src: '/files/videos/web/Moosee_graphic.mp4' },
 ];
 
 export const marqueeItems = ['Commercial Filmmaking', 'Photography'];
