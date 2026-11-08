@@ -110,11 +110,27 @@ export const socialLinks = [
     { href: '#', label: 'IN' },
 ];
 
-// TODO: replace placeholders with real names, roles, bios, and headshots (e.g. '/files/photos/web/team-jane.jpg')
+// Role-based placeholder bios; no personal details yet.
+// TODO: swap in personal bios and headshots (crop 4:5, save under public/files/photos/web/, e.g. '/files/photos/web/team-edmond.jpg')
 export const teamMembers = [
-    { name: 'Edmond Nzivugira', role: 'Founder & Videographer', bio: 'Short bio goes here.', photo: null },
-    { name: 'Alex Attwell', role: 'Creative Director', bio: 'Short bio goes here.', photo: null },
-    { name: 'Eduardo Vilcara', role: 'Photographer', bio: 'Short bio goes here.', photo: null },
+    {
+        name: 'Edmond Nzivugira',
+        role: 'Founder & Videographer',
+        bio: 'Edmond founded Crescent Studio to give early-stage companies a creative team from day one. He leads every project from first conversation to final cut, and shoots with a documentary eye for the real people and moments behind a product.',
+        photo: null,
+    },
+    {
+        name: 'Alex Attwell',
+        role: 'Creative Director',
+        bio: 'Alex shapes the creative vision behind each project, turning a founder\'s story into a clear concept and look. Film, photography and design all run through one direction, so everything a client puts out feels like the same brand.',
+        photo: null,
+    },
+    {
+        name: 'Eduardo Vilcara',
+        role: 'Photographer',
+        bio: 'Eduardo captures the people, products and places behind the companies we work with. His work favors natural light and candid moments, giving brands imagery that feels honest rather than staged.',
+        photo: null,
+    },
     // { name: 'Team Member', role: 'Producer & Editor', bio: 'Short bio goes here.', photo: null },
 ];
 
