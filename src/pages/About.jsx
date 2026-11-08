@@ -15,7 +15,7 @@ export default function About() {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-16 font-sans text-lg font-light leading-relaxed">
                     <div>
                         <p className="mb-6">Early-stage companies are building impressive products, but their public presence often hasn't caught up. Crescent Studio was founded to solve this exact problem.</p>
-                        <p>We are an independent creative studio that functions as your external creative team. Our approach is rooted in authentic, documentary-informed storytelling. Through commercial filmmaking and photography, we believe in showing the human element.</p>
+                        <p>We are an independent creative studio that functions as your external creative team. Our approach is rooted in authentic, documentary-informed storytelling. Through commercial filmmaking, photography, event coverage, and live production, we believe in showing the human element.</p>
                     </div>
                     <div>
                         <InfoCard title="The Advantage">

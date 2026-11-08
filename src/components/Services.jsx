@@ -9,7 +9,7 @@ export default function Services() {
         <Section id="services" className="relative z-10">
             <SectionHeader eyebrow="What We Offer" title={<>Made to move<br /><span className="text-brand-light-blue italic">people.</span></>}>
                 <p className="max-w-md text-lg font-light text-brand-offwhite/70 leading-relaxed">
-                    Thoughtful film and photography for brands with a story to tell.
+                    Film, photography, events, and live production for brands with a story to tell.
                 </p>
             </SectionHeader>
 
