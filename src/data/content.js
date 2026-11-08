@@ -17,7 +17,7 @@ export const heroMedia = [
     { type: 'video', src: '/files/videos/web/Moosee_graphic.mp4' },
 ];
 
-export const marqueeItems = ['Commercial Filmmaking', 'Photography'];
+export const marqueeItems = ['Commercial Filmmaking', 'Photography', 'Event Coverage', 'Live Production'];
 
 export const services = [
     {
@@ -36,6 +36,22 @@ export const services = [
         description: 'Intentional imagery to give your brand a distinctive, human point of view.',
         deliverables: ['Product', 'Campaign', 'People'],
     },
+    {
+        index: '03',
+        tag: 'Events',
+        accent: 'yellow',
+        title: 'Event Coverage',
+        description: 'Launches, panels, and gatherings captured as they happen, so the energy of the room lives on after it ends.',
+        deliverables: ['Recap films', 'Event photography', 'Social cutdowns'],
+    },
+    {
+        index: '04',
+        tag: 'Live',
+        accent: 'light-blue',
+        title: 'Live Production',
+        description: 'Multi-camera video and clean audio for podcasts and live shows, recorded and produced end to end.',
+        deliverables: ['Video podcasts', 'Audio podcasts', 'Live recording'],
+    },
 ];
 
 // Selected projects.
@@ -45,14 +61,14 @@ export const services = [
 // - `video`: the full film that opens in a player with sound when the project is clicked; null = not clickable.
 export const projects = [
     {
-        title: 'Racewear',
-        category: 'Client Work',
+        title: 'Colgate Brief Tour',
+        category: 'Self-Initiated Concept',
         accent: 'yellow',
-        discipline: 'Commercial Filmmaking',
-        description: 'A 60-second commercial film designed to capture the visceral, fast-paced, and gritty reality of the track.',
-        background: 'https://images.unsplash.com/photo-1541348263662-e068362d4941?auto=format&fit=crop&q=80&w=2000',
-        preview: null,
-        video: null,
+        discipline: 'Integrated Campaign',
+        description: 'A brief tour of Colgate University Campus in Autumn.',
+        background: '/files/videos/web/colgate-tour-poster.jpg',
+        preview: '/files/videos/web/colgate-tour-preview.mp4',
+        video: '/files/videos/web/colgate-tour.mp4',
     },
     {
         title: 'Aura Water',
