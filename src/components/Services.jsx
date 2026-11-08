@@ -17,7 +17,7 @@ export default function Services() {
                 {services.map((service) => <ServiceCard key={service.index} {...service} />)}
             </div>
 
-            <InteractiveLink href="#contact" className="inline-block mt-10 text-sm uppercase tracking-widest text-brand-yellow hover:text-brand-light-blue transition-colors">
+            <InteractiveLink to="/contact" className="inline-block mt-10 text-sm uppercase tracking-widest text-brand-yellow hover:text-brand-light-blue transition-colors">
                 Have a project in mind? Get in touch <span aria-hidden="true">→</span>
             </InteractiveLink>
         </Section>

@@ -1,30 +1,27 @@
-import CustomCursor from './components/CustomCursor';
-import Preloader from './components/Preloader';
-import Nav from './components/Nav';
-import Hero from './components/Hero';
-import Marquee from './components/Marquee';
-import Services from './components/Services';
-import Work from './components/Work';
-import Gallery from './components/Gallery';
-import Studio from './components/Studio';
-import Contact from './components/Contact';
-import { marqueeItems } from './data/content';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Layout from './components/Layout';
+import Home from './pages/Home';
+import About from './pages/About';
+import OurWork from './pages/OurWork';
+import Team from './pages/Team';
+import BehindTheScenes from './pages/BehindTheScenes';
+import ContactPage from './pages/ContactPage';
+import NotFound from './pages/NotFound';
 
 export default function App() {
     return (
-        <>
-            <CustomCursor />
-            <Preloader />
-            <Nav />
-            <main>
-                <Hero />
-                <Marquee items={marqueeItems} />
-                <Services />
-                <Work />
-                <Gallery />
-                <Studio />
-                <Contact />
-            </main>
-        </>
+        <BrowserRouter>
+            <Routes>
+                <Route element={<Layout />}>
+                    <Route index element={<Home />} />
+                    <Route path="about" element={<About />} />
+                    <Route path="work" element={<OurWork />} />
+                    <Route path="team" element={<Team />} />
+                    <Route path="bts" element={<BehindTheScenes />} />
+                    <Route path="contact" element={<ContactPage />} />
+                    <Route path="*" element={<NotFound />} />
+                </Route>
+            </Routes>
+        </BrowserRouter>
     );
 }

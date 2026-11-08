@@ -10,6 +10,8 @@ export default function Preloader() {
         const start = () => {
             fadeTimer = setTimeout(() => {
                 setStage('fading');
+                // Lets intro animations (e.g. the hero tagline) start as the preloader lifts
+                document.documentElement.dataset.loaded = 'true';
                 removeTimer = setTimeout(() => setStage('done'), 800);
             }, 2200);
         };

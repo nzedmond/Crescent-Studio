@@ -97,9 +97,9 @@ body.hovering .cursor-outline {
     -webkit-text-stroke: 0px;
     overflow: hidden;
     width: 0%;
-    animation: fillText 2s ease-in-out forwards;
+    animation: cs-fillText 2s ease-in-out forwards;
 }
-@keyframes fillText {
+@keyframes cs-fillText {
     0% { width: 0%; content: "0%"; }
     20% { content: "24%"; }
     50% { content: "58%"; }
@@ -107,17 +107,21 @@ body.hovering .cursor-outline {
     100% { width: 100%; content: "100%"; }
 }
 
-/* Continuous Marquee */
+/* Continuous Marquee
+   Keyframe names use a `cs-` prefix: browser extensions inject their own generic
+   @keyframes (e.g. "marquee") into pages and would otherwise override ours. */
 .marquee-wrapper {
     white-space: nowrap;
     overflow: hidden;
     box-sizing: border-box;
 }
 .marquee-content {
-    display: inline-block;
-    animation: marquee 20s linear infinite;
+    display: flex;
+    width: max-content;
+    animation: cs-marquee 20s linear infinite; /* duration is overridden inline to keep a constant speed */
+    will-change: transform;
 }
-@keyframes marquee {
+@keyframes cs-marquee {
     0% { transform: translate3d(0, 0, 0); }
     100% { transform: translate3d(-50%, 0, 0); }
 }
@@ -134,17 +138,19 @@ body.hovering .cursor-outline {
     filter: brightness(0.4) contrast(1.2);
 }
 
-/* Parallax Hero Media */
-.parallax-img {
+/* Orbiting Hero Media (position/scale/opacity are set per frame from JS) */
+.orbit-item {
     position: absolute;
-    will-change: transform;
-    transition: transform 0.1s linear;
+    left: 50%;
+    top: 50%;
+    opacity: 0;
+    will-change: transform, opacity;
     box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
     border-radius: 8px;
     overflow: hidden;
 }
-.parallax-img img,
-.parallax-img video {
+.orbit-item img,
+.orbit-item video {
     display: block;
     width: 100%;
     height: 100%;
@@ -152,9 +158,47 @@ body.hovering .cursor-outline {
     filter: grayscale(80%);
     transition: filter 0.5s ease;
 }
-.parallax-img:hover img,
-.parallax-img:hover video {
+.orbit-item:hover img,
+.orbit-item:hover video {
     filter: grayscale(0%);
+}
+
+/* Hero Tagline: waits for the preloader, then rises in and draws its underline */
+.tagline,
+.tagline-line {
+    opacity: 0;
+}
+.tagline-underline path {
+    stroke-dasharray: 1;
+    stroke-dashoffset: 1;
+}
+html[data-loaded] .tagline {
+    animation: cs-taglineCard 1.1s cubic-bezier(0.16, 1, 0.3, 1) 0.2s both;
+}
+html[data-loaded] .tagline-line {
+    animation: cs-taglineLine 0.9s cubic-bezier(0.16, 1, 0.3, 1) 0.45s both;
+}
+html[data-loaded] .tagline-line + .tagline-line {
+    animation-delay: 0.65s;
+}
+html[data-loaded] .tagline-underline path {
+    animation: cs-drawLine 0.9s cubic-bezier(0.65, 0, 0.35, 1) 1.3s forwards;
+}
+@keyframes cs-taglineCard {
+    from { opacity: 0; transform: translateY(16px) scale(0.96); }
+    to { opacity: 1; transform: none; }
+}
+@keyframes cs-taglineLine {
+    from { opacity: 0; transform: translateY(10px); filter: blur(6px); }
+    to { opacity: 1; transform: none; filter: blur(0); }
+}
+@keyframes cs-drawLine {
+    to { stroke-dashoffset: 0; }
+}
+@media (prefers-reduced-motion: reduce) {
+    .tagline,
+    .tagline-line { opacity: 1; animation: none !important; }
+    .tagline-underline path { stroke-dashoffset: 0; animation: none !important; }
 }
 
 /* Photography Gallery */

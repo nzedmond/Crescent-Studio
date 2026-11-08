@@ -1,25 +1,20 @@
 export const navLinks = [
-    { href: '#services', label: 'Services' },
-    { href: '#work', label: 'Work' },
-    { href: '#gallery', label: 'Gallery' },
-    { href: '#studio', label: 'Studio' },
-    { href: '#contact', label: 'Contact' },
+    { to: '/', label: 'Home' },
+    { to: '/about', label: 'About Us' },
+    { to: '/work', label: 'Our Work' },
+    { to: '/team', label: 'Our Team' },
+    { to: '/bts', label: 'BTS' },
+    { to: '/contact', label: 'Contact' },
 ];
 
-// Floating hero media; `position` holds the size/placement/opacity utility classes
+// Hero media, spaced evenly around the orbit in this order
 export const heroMedia = [
-    { type: 'image', src: '/files/photos/web/DSCF7995.jpg', alt: 'Portrait of a man in a worn hat', speed: 1.5,
-      position: 'w-48 h-64 md:w-64 md:h-80 opacity-60 top-[15%] left-[10%] md:top-[20%] md:left-[15%]' },
-    { type: 'image', src: '/files/photos/web/DSC_9652.jpg', alt: 'Two performers embracing on a dark stage', speed: -2,
-      position: 'w-56 h-72 md:w-72 md:h-96 opacity-40 bottom-[10%] right-[5%] md:bottom-[15%] md:right-[15%]' },
-    { type: 'image', src: '/files/photos/web/DSCF4116.jpg', alt: 'A lone figure crossing a wide city avenue', speed: 0.8,
-      position: 'w-40 h-56 md:w-56 md:h-72 opacity-50 top-[10%] right-[20%] md:top-[15%] md:right-[25%]' },
-    { type: 'video', src: '/files/videos/Moose_mtCube.mp4', speed: -1.2,
-      position: 'w-36 h-48 md:w-48 md:h-64 opacity-60 bottom-[8%] left-[3%] md:bottom-[10%] md:left-[8%]' },
-    { type: 'video', src: '/files/videos/Moose_nurturing.mp4', speed: 1.8,
-      position: 'w-36 h-48 md:w-48 md:h-64 opacity-50 top-[8%] right-[3%] md:top-[10%] md:right-[8%]' },
-    { type: 'video', src: '/files/videos/Moosee_graphic.mp4', speed: -0.7,
-      position: 'w-32 h-44 md:w-40 md:h-56 opacity-50 bottom-[12%] right-[28%] md:bottom-[10%] md:right-[32%]' },
+    { type: 'image', src: '/files/photos/web/DSCF7995.jpg', alt: 'Portrait of a man in a worn hat' },
+    { type: 'video', src: '/files/videos/Moose_mtCube.mp4' },
+    { type: 'image', src: '/files/photos/web/DSC_9652.jpg', alt: 'Two performers embracing on a dark stage' },
+    { type: 'video', src: '/files/videos/Moose_nurturing.mp4' },
+    { type: 'image', src: '/files/photos/web/DSCF4116.jpg', alt: 'A lone figure crossing a wide city avenue' },
+    { type: 'video', src: '/files/videos/Moosee_graphic.mp4' },
 ];
 
 export const marqueeItems = ['Commercial Filmmaking', 'Photography'];
@@ -106,4 +101,23 @@ export const contactFields = [
 export const socialLinks = [
     { href: '#', label: 'IG' },
     { href: '#', label: 'IN' },
+];
+
+// TODO: replace placeholders with real names, roles, bios, and headshots (e.g. '/files/photos/web/team-jane.jpg')
+export const teamMembers = [
+    { name: 'Edmond Nzivugira', role: 'Founder & Videographer', bio: 'Short bio goes here.', photo: null },
+    { name: 'Alex Attwell', role: 'Creative Director', bio: 'Short bio goes here.', photo: null },
+    { name: 'Eduardo Vilcara', role: 'Photographer', bio: 'Short bio goes here.', photo: null },
+    // { name: 'Team Member', role: 'Producer & Editor', bio: 'Short bio goes here.', photo: null },
+];
+
+// Behind-the-scenes media. `type` is 'image' or 'video'; leave `src` null to show a placeholder tile.
+// TODO: add real set photos / clips under public/files/
+export const btsItems = [
+    { type: 'image', src: null, caption: 'On set' },
+    { type: 'image', src: null, caption: 'Lighting setup' },
+    { type: 'video', src: null, caption: 'Camera rig' },
+    { type: 'image', src: null, caption: 'Location scout' },
+    { type: 'image', src: null, caption: 'Edit bay' },
+    { type: 'image', src: null, caption: 'Wrap' },
 ];
