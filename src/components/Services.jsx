@@ -9,7 +9,7 @@ export default function Services() {
         <Section id="services" className="relative z-10">
             <SectionHeader eyebrow="What We Offer" title={<>Made to move<br /><span className="text-brand-light-blue italic">people.</span></>}>
                 <p className="max-w-md text-lg font-light text-brand-offwhite/70 leading-relaxed">
-                    Film, photography, events, and live production under one creative direction, so you never have to coordinate a roster of freelancers.
+                    From brand identity and commercial filmmaking to photography and live production, we bring ideas to life through one cohesive creative vision.
                 </p>
             </SectionHeader>
 
