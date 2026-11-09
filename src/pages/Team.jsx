@@ -23,8 +23,8 @@ function TeamCard({ name, role, bio, photo }) {
 export default function Team() {
     return (
         <>
-            <PageHeader eyebrow="Our Team" title={<>The people<br /><span className="text-brand-light-blue italic">behind the lens.</span></>}>
-                A founder-led collective of filmmakers and photographers, assembled around each project.
+            <PageHeader eyebrow="Our Team" title={<>DIFFERENT MINDS<br /><span className="text-brand-light-blue italic">ONE CREATIVE VISION.</span></>}>
+                A multidisciplinary team of creative thinkers and makers, working together to shape brands and bring meaningful stories to life.
             </PageHeader>
             <Section className="relative z-10">
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
