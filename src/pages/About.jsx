@@ -55,7 +55,8 @@ export default function About() {
             </Section>
 
             <Section>
-                <SectionHeader eyebrow="Who We Work With" title={<>BUILT FOR FOUNDERS.<br /><span className="text-brand-light-blue italic">READY FOR WHAT'S NEXT.</span></>} />
+                <SectionHeader eyebrow="Who We Work With" title={<>FROM FIRST IDEA <br /><span className="text-brand-light-blue italic">TO WHAT'S NEXT.</span></>}
+                    subtitle="We partner with founders at different stages of building their businesses, providing the creative support they need to establish, communicate, and grow their brands." />
                 <FounderStages />
                 <InteractiveLink to="/team" className="inline-block mt-12 text-sm uppercase tracking-widest text-brand-yellow hover:text-brand-light-blue transition-colors">
                     Meet the team <span aria-hidden="true">→</span>

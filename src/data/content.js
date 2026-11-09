@@ -48,20 +48,19 @@ export const approach = [
 // Who we work with
 export const founderStages = [
     {
-        title: 'Building Something New',
-        body: "You have an idea, an early product, or a growing startup. You need a brand identity that gives your business a recognizable face and visual content that helps people understand what you're building.",
+        title: 'The Idea-to-Market Founder',
+        subtitle: 'Building something new',
+        body: 'You have an idea, prototype, or early product. You need a brand identity, product photography, and foundational visual content to introduce your business to the world.',
     },
     {
-        title: 'PREPARING TO LAUNCH',
-        body: "You're bringing a product to market, announcing a new venture, or preparing to introduce your company to a wider audience. You need creative assets that capture attention and communicate what makes your business worth noticing.",
+        title: 'The Growing Startup',
+        subtitle: 'Building momentum',
+        body: "Your business is operational, but your creative presence hasn't kept pace. You need consistent visual content, stronger brand communication, and creative support to build recognition.",
     },
     {
-        title: 'GROWING YOUR PRESENCE',
-        body: "Your business is moving forward, but your brand and content haven't kept pace. You need consistent photography, film, and visual storytelling that reflect the quality of your work and help you build recognition.",
-    },
-    {
-        title: "READY FOR A CREATIVE PARTNER",
-        body: "You've tried coordinating freelancers or managing creative work yourself. Now you want one reliable creative partner who understands your business, brings the right talent together, and keeps everything moving in one direction.",
+        title: 'The Scaling Founder',
+        subtitle: "Preparing for what's next",
+        body: "You're approaching significant milestones: product launches, fundraising, partnerships, or entering new markets. You need more sophisticated creative production to communicate your company's value and ambition.",
     },
 ];
 
