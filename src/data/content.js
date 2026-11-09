@@ -64,7 +64,7 @@ export const founderStages = [
     },
 ];
 
-export const marqueeItems = ['Commercial Filmmaking', 'Photography', 'Event Coverage', 'Live Production'];
+export const marqueeItems = ['Brand Identity & Design', 'Commercial Filmmaking', 'Photography', 'Production & Events'];
 
 export const services = [
     {
