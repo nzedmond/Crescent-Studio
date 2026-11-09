@@ -17,6 +17,54 @@ export const heroMedia = [
     { type: 'video', src: '/files/videos/web/Moosee_graphic.mp4' },
 ];
 
+// Brand language: see BRAND.md (from the "Crescent Studio Description" doc)
+export const positioning =
+    'Crescent Studio is a creative partner for early-stage founders. We build brands, produce visual content, and tell stories that bring businesses to life, so founders can stay focused on building what matters.';
+
+// How we work: the four promises
+export const approach = [
+    {
+        index: '01',
+        title: 'WE FIND THE FOCUS',
+        body: "Not every business needs the same creative support. We work with you to identify what your brand needs most, prioritize the right opportunities, and turn them into a clear creative plan.",
+    },
+    {
+        index: '02',
+        title: "BUILT AROUND YOUR BUSINESS",
+        body: 'We understand that building a company comes first. Our approach adapts to your priorities, pace, and resources, giving you creative support without adding another team to manage.',
+    },
+    {
+        index: '03',
+        title: 'ONE TEAM. ONE VISION.',
+        body: 'Branding, film, photography, and visual content work best when they tell the same story. We bring the right creative talent together under one direction, creating a consistent identity across every touchpoint.',
+    },
+    {
+        index: '04',
+        title: "READY FOR WHAT'S NEXT",
+        body: "As your company evolves, your creative needs evolve with it. From establishing your brand identity to launching products and building market presence, we're here to help your brand grow alongside your business.",
+    },
+];
+
+// Who we work with
+export const founderStages = [
+    {
+        title: 'Building Something New',
+        body: "You have an idea, an early product, or a growing startup. You need a brand identity that gives your business a recognizable face and visual content that helps people understand what you're building.",
+    },
+    {
+        title: 'PREPARING TO LAUNCH',
+        body: "You're bringing a product to market, announcing a new venture, or preparing to introduce your company to a wider audience. You need creative assets that capture attention and communicate what makes your business worth noticing.",
+    },
+    {
+        title: 'GROWING YOUR PRESENCE',
+        body: "Your business is moving forward, but your brand and content haven't kept pace. You need consistent photography, film, and visual storytelling that reflect the quality of your work and help you build recognition.",
+    },
+    {
+        title: "READY FOR A CREATIVE PARTNER",
+        body: "You've tried coordinating freelancers or managing creative work yourself. Now you want one reliable creative partner who understands your business, brings the right talent together, and keeps everything moving in one direction.",
+    },
+];
+
 export const marqueeItems = ['Commercial Filmmaking', 'Photography', 'Event Coverage', 'Live Production'];
 
 export const services = [

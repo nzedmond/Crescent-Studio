@@ -9,7 +9,7 @@ export default function Contact() {
                 <div>
                     <h1 className="font-display font-bold text-6xl md:text-8xl tracking-tighter mb-6">Let's Talk.</h1>
                     <p className="text-xl font-light text-brand-offwhite/60 mb-12 max-w-md">
-                        Preparing for a launch, raise, or rebrand? We are ready to build the story.
+                        Preparing for a launch, a raise, or a rebrand? Not sure what you need yet? That's our job. Tell us where your company is headed and we'll work out the creative priorities with you.
                     </p>
                     <div className="space-y-6">
                         <ContactDetail label="Email">

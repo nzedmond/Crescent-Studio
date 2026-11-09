@@ -27,7 +27,7 @@ export default function ContactForm() {
                 <div className="absolute inset-0 bg-brand-navy flex items-center justify-center border border-brand-light-blue/30 p-8 text-center">
                     <div>
                         <h3 className="font-display text-3xl mb-4">Received.</h3>
-                        <p className="text-brand-offwhite/70 font-light">Thank you. We will review your inquiry and reach out shortly to discuss the creative direction.</p>
+                        <p className="text-brand-offwhite/70 font-light">Thank you. We'll be in touch shortly to talk through where your company is headed and what it needs first.</p>
                     </div>
                 </div>
             )}
