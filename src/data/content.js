@@ -179,20 +179,20 @@ export const teamMembers = [
     {
         name: 'Edmond Nzivugira',
         role: 'Founder & Videographer',
-        bio: 'Edmond founded Crescent Studio to give early-stage companies a creative team from day one. He leads every project from first conversation to final cut, and shoots with a documentary eye for the real people and moments behind a product.',
-        photo: null,
+        bio: "Hiking is my second nature. I wouldn't do it alone, but once I meet a group or motivated individuals, we're hiking that mountain. I love photography and spend most of my time experimenting with studio photography, IN MY ROOM! Well, cybersecurity is my second lover. It's just cool knowing how unsafe all these tech stuff are, but also knowing how you can protect yourself. I enjoy doing a lil bit of math, not the big potato stuff, but simple linear algebra, like matrix operations, numerical approximations, and learning how LLMs and GPS systems use that to do what they're able to do, even HALLUCINATING!",
+        photo: '/files/photos/web/team/edmond.jpg',
     },
     {
         name: 'Alex Attwell',
         role: 'Creative Director',
         bio: 'Alex shapes the creative vision behind each project, turning a founder\'s story into a clear concept and look. Film, photography and design all run through one direction, so everything a client puts out feels like the same brand.',
-        photo: null,
+        photo: '/files/photos/web/team/alex.jpg',
     },
     {
         name: 'Eduardo Vilcara',
         role: 'Photographer',
-        bio: 'Eduardo captures the people, products and places behind the companies we work with. His work favors natural light and candid moments, giving brands imagery that feels honest rather than staged.',
-        photo: null,
+        bio: "I am a photographer who likes to try all types of photography from wildlife, street, events, studio, to commercial photography. I'm a mathematics and physics major, and I think about photography as a science when taking pictures. When I'm not studying or taking pictures, I enjoy listening to new music.",
+        photo: '/files/photos/web/team/eduardo.jpg',
     },
     // { name: 'Team Member', role: 'Producer & Editor', bio: 'Short bio goes here.', photo: null },
 ];
