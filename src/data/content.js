@@ -227,7 +227,7 @@ export const socialLinks = [
 export const teamMembers = [
     {
         name: 'Edmond Nzivugira',
-        role: 'Founder & Videographer',
+        role: 'Founder & Cinematographer',
         bio: "Hiking is my second nature. I wouldn't do it alone, but once I meet a group of motivated individuals, we're hiking that mountain. I love photography and spend most of my time experimenting with studio photography, IN MY ROOM! Well, cybersecurity is my second lover. It's just cool knowing how unsafe all these tech stuff are, but also knowing how you can protect yourself. I enjoy doing a lil bit of math, not the big potato stuff, but simple linear algebra, like matrix operations, numerical approximations, and learning how LLMs and GPS systems use that to do what they're able to do, even HALLUCINATING!",
         photo: '/files/photos/web/team/edmond.jpg',
     },

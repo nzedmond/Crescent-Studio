@@ -3,7 +3,6 @@ import Section from '../components/Section';
 import SectionHeader from '../components/SectionHeader';
 import InfoCard from '../components/InfoCard';
 import InteractiveLink from '../components/InteractiveLink';
-import ApproachGrid from '../components/ApproachGrid';
 import FounderStages from '../components/FounderStages';
 import CtaBand from '../components/CtaBand';
 import { positioning } from '../data/content';
@@ -47,11 +46,6 @@ export default function About() {
                         </InfoCard>
                     </div>
                 </div>
-            </Section>
-
-            <Section>
-                <SectionHeader eyebrow="How We Work" title={<>Creative capacity,<br /><span className="text-brand-light-blue italic">without the overhead.</span></>} />
-                <ApproachGrid />
             </Section>
 
             <Section>
