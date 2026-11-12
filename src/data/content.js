@@ -106,8 +106,12 @@ export const services = [
 // - `preview`: short muted loop that plays over the still on hover. Use a small compressed copy in
 //   public/files/videos/web/ (e.g. '/files/videos/web/racewear-preview.mp4'); null = still image only.
 // - `video`: the full film that opens in a player with sound when the project is clicked; null = not clickable.
+// Each project with a `caseStudy` gets its own page at /work/<slug>.
+// `draft: true` shows a "placeholder copy" notice on the page; remove it once the real text is in.
+// Execution items with no `image` or `video` render as an empty labelled tile until media is added.
 export const projects = [
     {
+        slug: 'colgate-brief-tour',
         title: 'Colgate Brief Tour',
         category: 'Self-Initiated Concept',
         accent: 'yellow',
@@ -116,8 +120,23 @@ export const projects = [
         background: '/files/videos/web/colgate-tour-poster.jpg',
         preview: '/files/videos/web/colgate-tour-preview.mp4',
         video: '/files/videos/web/colgate-tour.mp4',
+        caseStudy: {
+            draft: true,
+            client: 'Self-initiated',
+            year: '2026',
+            services: ['Commercial Filmmaking', 'Photography'],
+            challenge: 'Placeholder. What was this project trying to communicate or accomplish? For example: campus tours rarely capture how a place actually feels in a given season, and we wanted to show Colgate the way students experience it in autumn.',
+            direction: 'Placeholder. What creative direction did Crescent Studio develop? Describe the idea, the tone, and the visual choices: pacing, colour, music, and why they fit the story.',
+            execution: [
+                { label: 'Photography', title: 'Campus stills', wide: true },
+                { label: 'Social', title: 'Cutdowns for social' },
+            ],
+            resultLabel: 'What it explores',
+            result: 'Placeholder. For a self-initiated project, describe what the work demonstrates about how Crescent Studio approaches a story. For a client project, describe what the work accomplished.',
+        },
     },
     {
+        slug: 'aura-water',
         title: 'Aura Water',
         category: 'Self-Initiated Concept',
         accent: 'light-blue',
@@ -126,8 +145,26 @@ export const projects = [
         background: 'https://images.unsplash.com/photo-1544367567-0f2fcb046eb9?auto=format&fit=crop&q=80&w=2000',
         preview: null,
         video: null,
+        caseStudy: {
+            draft: true,
+            client: 'Concept brand',
+            year: '2026',
+            services: ['Brand Identity & Design', 'Photography', 'Commercial Filmmaking'],
+            challenge: 'Placeholder. What does a pre-seed beverage brand need to stand out in a crowded market? Describe the problem the identity had to solve and who it needed to reach.',
+            direction: 'Placeholder. Describe the brand idea, the visual system (logo, colour, type), and how the photography and film extend it.',
+            execution: [
+                { label: 'Brand Identity', title: 'Logo and visual system', wide: true },
+                { label: 'Packaging', title: 'Bottle and label design' },
+                { label: 'Product Photography', title: 'Product stills' },
+                { label: 'Commercial Film', title: 'Launch film' },
+                { label: 'Launch Campaign', title: 'Social launch assets' },
+            ],
+            resultLabel: 'What it explores',
+            result: 'Placeholder. Describe what this concept shows about how Crescent Studio builds a brand from first idea to launch.',
+        },
     },
     {
+        slug: 'trailhead',
         title: 'Trailhead',
         category: 'Self-Initiated Concept',
         accent: 'light-blue',
@@ -136,6 +173,21 @@ export const projects = [
         background: 'https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=2000',
         preview: null,
         video: null,
+        caseStudy: {
+            draft: true,
+            client: 'Self-initiated',
+            year: '2026',
+            services: ['Commercial Filmmaking', 'Photography'],
+            challenge: 'Placeholder. What was the campaign trying to communicate? For example: outdoor advertising often feels staged, and the goal was to capture something more honest.',
+            direction: 'Placeholder. Describe the documentary-informed approach: how you shot, what you avoided, and how that shaped the final look.',
+            execution: [
+                { label: 'Campaign Film', title: 'Weekend film', wide: true },
+                { label: 'Photography', title: 'Campaign stills' },
+                { label: 'Social', title: 'Social cutdowns' },
+            ],
+            resultLabel: 'What it explores',
+            result: 'Placeholder. Describe what this project demonstrates about Crescent Studio\'s storytelling approach.',
+        },
     },
 ];
 
@@ -179,13 +231,13 @@ export const teamMembers = [
     {
         name: 'Edmond Nzivugira',
         role: 'Founder & Videographer',
-        bio: "Hiking is my second nature. I wouldn't do it alone, but once I meet a group or motivated individuals, we're hiking that mountain. I love photography and spend most of my time experimenting with studio photography, IN MY ROOM! Well, cybersecurity is my second lover. It's just cool knowing how unsafe all these tech stuff are, but also knowing how you can protect yourself. I enjoy doing a lil bit of math, not the big potato stuff, but simple linear algebra, like matrix operations, numerical approximations, and learning how LLMs and GPS systems use that to do what they're able to do, even HALLUCINATING!",
+        bio: "Hiking is my second nature. I wouldn't do it alone, but once I meet a group of motivated individuals, we're hiking that mountain. I love photography and spend most of my time experimenting with studio photography, IN MY ROOM! Well, cybersecurity is my second lover. It's just cool knowing how unsafe all these tech stuff are, but also knowing how you can protect yourself. I enjoy doing a lil bit of math, not the big potato stuff, but simple linear algebra, like matrix operations, numerical approximations, and learning how LLMs and GPS systems use that to do what they're able to do, even HALLUCINATING!",
         photo: '/files/photos/web/team/edmond.jpg',
     },
     {
         name: 'Alex Attwell',
         role: 'Creative Director',
-        bio: 'Alex shapes the creative vision behind each project, turning a founder\'s story into a clear concept and look. Film, photography and design all run through one direction, so everything a client puts out feels like the same brand.',
+        bio: "Growing up, my dad would always stop to take a picture, whether we were in the middle of the street or rushing to get somewhere. He’d pull out his pocket-sized film camera and capture whatever caught his eye, much to my annoyance at the time. It wasn’t until my junior year of high school, when I rediscovered photography for myself, that I finally understood what made him want to stop and capture those moments. Since then, my love for photography has grown into a passion for film, which I’m now studying at Boston University. Whether I’m writing screenplays, experimenting with different camera settings, or simply taking pictures of things that catch my eye, I love finding new ways to capture the world around me, and I hope to turn that passion into a career.",
         photo: '/files/photos/web/team/alex.jpg',
     },
     {
