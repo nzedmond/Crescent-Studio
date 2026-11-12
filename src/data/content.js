@@ -36,12 +36,12 @@ export const approach = [
     {
         index: '03',
         title: 'ONE TEAM. ONE VISION.',
-        body: 'Branding, film, photography, and visual content work best when they tell the same story. We bring the right creative talent together under one direction, creating a consistent identity across every touchpoint.',
+        body: 'Film, photography, and visual content work best when they tell the same story. We bring the right creative talent together under one direction, creating a consistent identity across every touchpoint.',
     },
     {
         index: '04',
         title: "READY FOR WHAT'S NEXT",
-        body: "As your company evolves, your creative needs evolve with it. From establishing your brand identity to launching products and building market presence, we're here to help your brand grow alongside your business.",
+        body: "As your company evolves, your creative needs evolve with it. From your first launch to building market presence, we're here to help your brand grow alongside your business.",
     },
 ];
 
@@ -50,7 +50,7 @@ export const founderStages = [
     {
         title: 'The Idea-to-Market Founder',
         subtitle: 'Building something new',
-        body: 'You have an idea, prototype, or early product. You need a brand identity, product photography, and foundational visual content to introduce your business to the world.',
+        body: 'You have an idea, prototype, or early product. You need product photography, film, and foundational visual content to introduce your business to the world.',
     },
     {
         title: 'The Growing Startup',
@@ -64,42 +64,41 @@ export const founderStages = [
     },
 ];
 
-export const marqueeItems = ['Brand Identity & Design', 'Commercial Filmmaking', 'Photography', 'Production & Events'];
-
+// Services with `available: false` are hidden from the site (services grid and marquee).
 export const services = [
     {
-        index: '01',
         tag: 'Brand',
-        accent: 'yellow',
+        available: false, // launching ~3 months after opening; set to true to show it everywhere
         title: 'Brand Identity & Design',
         description: 'Distinctive visual identities that give your business a recognizable face, a clear personality, and a consistent presence.',
         deliverables: ['Brand strategy', 'Visual identity', 'Graphic design'],
     },
     {
-        index: '02',
         tag: 'Film',
-        accent: 'light-blue',
         title: 'Commercial Filmmaking',
         description: 'Cinematic films that communicate what makes your brand different, showcase your products, and connect with your audience.',
         deliverables: ['Brand films', 'Product stories', 'Campaigns'],
     },
     {
-        index: '03',
         tag: 'Photo',
-        accent: 'yellow',
         title: 'Photography',
         description: 'Thoughtful brand, product, and lifestyle imagery that gives your business a distinctive visual presence.',
         deliverables: ['Brand photography', 'Product photography', 'Lifestyle photography'],
     },
     {
-        index: '04',
         tag: 'Production',
-        accent: 'light-blue',
         title: 'Production & Events',
         description: 'Capturing and producing live experiences, events, and multi-camera productions through professional video and audio.',
         deliverables: ['Event films', 'Multi-camera production', 'Live broadcasts'],
     },
 ];
+
+// What the site actually shows, numbered and colour-alternated in display order
+export const activeServices = services
+    .filter((s) => s.available !== false)
+    .map((s, i) => ({ ...s, index: String(i + 1).padStart(2, '0'), accent: i % 2 ? 'light-blue' : 'yellow' }));
+
+export const marqueeItems = activeServices.map((s) => s.title);
 
 // Selected projects.
 // - `background`: still image behind the list on hover (also the player's poster). Unsplash placeholders for now.
@@ -136,31 +135,29 @@ export const projects = [
         },
     },
     {
-        slug: 'aura-water',
-        title: 'Aura Water',
-        category: 'Self-Initiated Concept',
+        slug: 'late-nights-great-bites',
+        title: 'Late Nights. Great Bites',
+        category: 'In Production',
         accent: 'light-blue',
-        discipline: 'Brand Identity & Design',
-        description: 'Visual identity built for a hypothetical pre-seed D2C beverage brand entering a saturated market.',
-        background: 'https://images.unsplash.com/photo-1544367567-0f2fcb046eb9?auto=format&fit=crop&q=80&w=2000',
+        discipline: 'Commercial Filmmaking',
+        description: 'A commercial for a food truck that keeps the city fed after dark. Currently in production.',
+        background: '/files/photos/web/700_9651.jpg',
+        heroPosition: 'center 80%', // case study crop: keep the vendors' feet in frame
         preview: null,
         video: null,
         caseStudy: {
             draft: true,
-            client: 'Concept brand',
+            client: 'Placeholder: client name',
             year: '2026',
-            services: ['Brand Identity & Design', 'Photography', 'Commercial Filmmaking'],
-            challenge: 'Placeholder. What does a pre-seed beverage brand need to stand out in a crowded market? Describe the problem the identity had to solve and who it needed to reach.',
-            direction: 'Placeholder. Describe the brand idea, the visual system (logo, colour, type), and how the photography and film extend it.',
+            services: ['Commercial Filmmaking'],
+            challenge: 'Placeholder. What did the food truck need? For example: who they want to reach, what makes their food or late-night service different, and where the commercial will run.',
+            direction: 'Placeholder. Describe the creative idea behind "Late Nights. Great Bites": the tone, how you shot the night-time setting, and how the food and the people behind it come across.',
             execution: [
-                { label: 'Brand Identity', title: 'Logo and visual system', wide: true },
-                { label: 'Packaging', title: 'Bottle and label design' },
-                { label: 'Product Photography', title: 'Product stills' },
-                { label: 'Commercial Film', title: 'Launch film' },
-                { label: 'Launch Campaign', title: 'Social launch assets' },
+                { label: 'Commercial Film', title: 'Late Nights. Great Bites', wide: true },
+                { label: 'Social', title: 'Cutdowns for social' },
+                { label: 'Photography', title: 'Stills from the shoot' },
             ],
-            resultLabel: 'What it explores',
-            result: 'Placeholder. Describe what this concept shows about how Crescent Studio builds a brand from first idea to launch.',
+            result: 'Placeholder. Once the commercial is out, describe what it accomplished for the business.',
         },
     },
     {

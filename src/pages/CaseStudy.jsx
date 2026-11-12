@@ -51,7 +51,7 @@ export default function CaseStudy() {
     if (index === -1) return <NotFound />;
 
     const project = projects[index];
-    const { title, category, accent, description, background, video, caseStudy: cs } = project;
+    const { title, category, accent, description, background, heroPosition, video, caseStudy: cs } = project;
     const next = projects.slice(index + 1).concat(projects.slice(0, index)).find((p) => p.slug && p.caseStudy);
 
     return (
@@ -93,7 +93,7 @@ export default function CaseStudy() {
                     {video ? (
                         <video src={video} poster={background} controls playsInline preload="metadata" className="block w-full max-h-[80vh] bg-black rounded" />
                     ) : (
-                        background && <img src={background} alt="" onError={(e) => { e.currentTarget.hidden = true; }} className="block w-full aspect-[16/9] object-cover rounded" />
+                        background && <img src={background} alt="" onError={(e) => { e.currentTarget.hidden = true; }} style={heroPosition ? { objectPosition: heroPosition } : undefined} className="block w-full aspect-[16/9] object-cover rounded" />
                     )}
                 </div>
             </section>
