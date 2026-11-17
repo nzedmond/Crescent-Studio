@@ -121,7 +121,7 @@ export const projects = [
     description: 'A brief tour of Colgate University Campus in Autumn.',
     background: '/files/videos/web/colgate-tour-poster.jpg',
     preview: '/files/videos/web/colgate-tour-preview.mp4',
-    video: '/files/videos/web/colgate-tour.mp4',
+    video: 'https://vimeo.com/1244898724', // full film on Vimeo; a local '/files/videos/web/...mp4' path also works
     caseStudy: {
         client: 'Self-initiated',
         year: '2026',

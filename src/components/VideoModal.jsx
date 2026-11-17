@@ -1,4 +1,5 @@
 import { useEffect, useRef } from 'react';
+import FilmPlayer from './FilmPlayer';
 
 // Full-screen player for a project's film. Native <dialog> gives focus trapping, Esc to close,
 // and makes the page behind it inert. Rendering the <video> only while open stops playback on close.
@@ -37,14 +38,13 @@ export default function VideoModal({ project, onClose }) {
                             Close <span aria-hidden="true">✕</span>
                         </button>
                     </div>
-                    <video
+                    <FilmPlayer
                         key={project.video}
                         src={project.video}
                         poster={project.background}
-                        autoPlay
-                        controls
-                        playsInline
-                        className="block w-full max-h-[80vh] bg-black rounded"
+                        title={`${project.title} film`}
+                        autoplay
+                        className="max-h-[80vh]"
                     />
                 </div>
             )}

@@ -36,3 +36,5 @@ dist
 
 # Local env settings (form endpoint etc.)
 *.local
+# Full films are on Vimeo now; keep the local copy out of the repo
+/public/files/videos/web/colgate-tour.mp4

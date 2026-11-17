@@ -4,6 +4,7 @@ import Section from '../components/Section';
 import InteractiveLink from '../components/InteractiveLink';
 import CtaBand from '../components/CtaBand';
 import NotFound from './NotFound';
+import FilmPlayer from '../components/FilmPlayer';
 import { accentText } from '../components/accent';
 import { projects } from '../data/content';
 
@@ -29,7 +30,7 @@ function ExecutionItem({ label, title, image, video, poster, wide }) {
     return (
         <figure className={wide ? 'sm:col-span-2' : ''}>
             {video ? (
-                <video src={video} poster={poster} controls playsInline preload="none" className="block w-full aspect-video bg-black rounded" />
+                <FilmPlayer src={video} poster={poster} title={title} preload="none" className="aspect-video" />
             ) : image ? (
                 <img src={image} alt={title} loading="lazy" className="block w-full aspect-[4/3] object-cover rounded" />
             ) : (
@@ -91,7 +92,7 @@ export default function CaseStudy() {
             <section className="px-6 md:px-20 bg-brand-navy relative z-10">
                 <div className="max-w-7xl mx-auto">
                     {video ? (
-                        <video src={video} poster={background} controls playsInline preload="metadata" className="block w-full max-h-[80vh] bg-black rounded" />
+                        <FilmPlayer src={video} poster={background} title={`${title} film`} className="max-h-[80vh]" />
                     ) : (
                         background && <img src={background} alt="" onError={(e) => { e.currentTarget.hidden = true; }} style={heroPosition ? { objectPosition: heroPosition } : undefined} className="block w-full aspect-[16/9] object-cover rounded" />
                     )}
