@@ -133,7 +133,7 @@ function MobileMenu({ open, pathname }) {
                 className={`mt-16 text-xs uppercase tracking-widest text-brand-offwhite/40 transition-opacity duration-700 ${open ? 'opacity-100' : 'opacity-0'}`}
                 style={{ transitionDelay: open ? '500ms' : '0ms' }}
             >
-                Hamilton, NY · hello@crescentstudio.com
+                Hamilton, NY · nzivugiraedmond@gmail.com
             </p>
         </div>
     );

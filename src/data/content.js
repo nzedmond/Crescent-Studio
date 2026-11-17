@@ -221,7 +221,7 @@ export const contactFields = [
 
 export const socialLinks = [
     { href: 'https://www.instagram.com/crescent_studio375/', label: 'IG' },
-    { href: '#', label: 'IN' },
+    { href: 'https://www.linkedin.com/in/nzedmond/', label: 'IN' },
 ];
 
 // Role-based placeholder bios; no personal details yet.

@@ -5,7 +5,7 @@ import { contactFields } from '../data/content';
 // Where submissions are sent: a Formspree-style endpoint (accepts a form POST, replies with JSON).
 // Set VITE_FORM_ENDPOINT in .env.local for local dev and in the hosting provider's environment variables.
 const FORM_ENDPOINT = import.meta.env.VITE_FORM_ENDPOINT;
-const FALLBACK_EMAIL = 'hello@crescentstudio.com';
+const FALLBACK_EMAIL = 'nzivugiraedmond@gmail.com';
 
 // 'idle' -> 'sending' -> 'leaving' (fade out) -> 'sent'; or 'sending' -> 'error'
 export default function ContactForm() {

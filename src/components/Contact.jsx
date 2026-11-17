@@ -13,7 +13,7 @@ export default function Contact() {
                     </p>
                     <div className="space-y-6">
                         <ContactDetail label="Email">
-                            <InteractiveLink href="mailto:hello@crescentstudio.com" className="text-2xl hover:text-brand-light-blue transition-colors">hello@crescentstudio.com</InteractiveLink>
+                            <InteractiveLink href="mailto:nzivugiraedmond@gmail.com" className="text-2xl hover:text-brand-light-blue transition-colors">nzivugiraedmond@gmail.com</InteractiveLink>
                         </ContactDetail>
                         <ContactDetail label="Location">
                             <p className="text-lg text-brand-offwhite/80">Hamilton, NY <span className="text-sm italic opacity-50 block mt-1">Available for travel</span></p>
