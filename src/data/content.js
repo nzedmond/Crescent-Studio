@@ -109,83 +109,84 @@ export const marqueeItems = activeServices.map((s) => s.title);
 // `draft: true` shows a "placeholder copy" notice on the page; remove it once the real text is in.
 // Execution items with no `image` or `video` render as an empty labelled tile until media is added.
 export const projects = [
-    {
-        slug: 'colgate-brief-tour',
-        title: 'Colgate Brief Tour',
-        category: 'Self-Initiated Concept',
-        accent: 'yellow',
-        discipline: 'Integrated Campaign',
-        description: 'A brief tour of Colgate University Campus in Autumn.',
-        background: '/files/videos/web/colgate-tour-poster.jpg',
-        preview: '/files/videos/web/colgate-tour-preview.mp4',
-        video: '/files/videos/web/colgate-tour.mp4',
-        caseStudy: {
-            draft: true,
-            client: 'Self-initiated',
-            year: '2026',
-            services: ['Commercial Filmmaking', 'Photography'],
-            challenge: 'Placeholder. What was this project trying to communicate or accomplish? For example: campus tours rarely capture how a place actually feels in a given season, and we wanted to show Colgate the way students experience it in autumn.',
-            direction: 'Placeholder. What creative direction did Crescent Studio develop? Describe the idea, the tone, and the visual choices: pacing, colour, music, and why they fit the story.',
-            execution: [
-                { label: 'Photography', title: 'Campus stills', wide: true },
-                { label: 'Social', title: 'Cutdowns for social' },
-            ],
-            resultLabel: 'What it explores',
-            result: 'Placeholder. For a self-initiated project, describe what the work demonstrates about how Crescent Studio approaches a story. For a client project, describe what the work accomplished.',
-        },
+{
+    slug: 'colgate-brief-tour',
+    title: 'Colgate Brief Tour',
+    category: 'Self-Initiated Concept',
+    accent: 'yellow',
+    discipline: 'Integrated Campaign',
+    description: 'A brief tour of Colgate University Campus in Autumn.',
+    background: '/files/videos/web/colgate-tour-poster.jpg',
+    preview: '/files/videos/web/colgate-tour-preview.mp4',
+    video: '/files/videos/web/colgate-tour.mp4',
+    caseStudy: {
+        draft: true,
+        client: 'Self-initiated',
+        year: '2026',
+        services: ['Commercial Filmmaking', 'Photography'],
+        challenge: 'University campus tours often prioritize landmarks and institutional information over the feeling of being there. This project explores a more personal way to introduce Colgate University, capturing the atmosphere, architecture, and natural beauty of campus during autumn.',
+        direction: 'We approached the project as a visual journey rather than a conventional campus tour. Drawing on the warmth and changing textures of autumn, the film combines cinematic campus footage with photography to create an inviting portrait of Colgate. The pacing, compositions, and seasonal color palette emphasize the character of the environment while allowing viewers to experience the campus at their own pace.',
+        execution: [
+            { label: 'Photography', title: 'Campus stills', wide: true },
+            { label: 'Social', title: 'Cutdowns for social' },
+        ],
+        resultLabel: 'What it explores',
+        result: 'A visual exploration of place, atmosphere, and seasonal storytelling. The project demonstrates how filmmaking and photography can work together to communicate the character of an environment, creating an experience that goes beyond simply showing a location.',
     },
-    {
-        slug: 'late-nights-great-bites',
-        title: 'Late Nights. Great Bites',
-        category: 'In Production',
-        accent: 'light-blue',
-        discipline: 'Commercial Filmmaking',
-        description: 'A commercial for a food truck that keeps the city fed after dark. Currently in production.',
-        background: '/files/photos/web/700_9651.jpg',
-        heroPosition: 'center 80%', // case study crop: keep the vendors' feet in frame
-        preview: null,
-        video: null,
-        caseStudy: {
-            draft: true,
-            client: 'Placeholder: client name',
-            year: '2026',
-            services: ['Commercial Filmmaking'],
-            challenge: 'Placeholder. What did the food truck need? For example: who they want to reach, what makes their food or late-night service different, and where the commercial will run.',
-            direction: 'Placeholder. Describe the creative idea behind "Late Nights. Great Bites": the tone, how you shot the night-time setting, and how the food and the people behind it come across.',
-            execution: [
-                { label: 'Commercial Film', title: 'Late Nights. Great Bites', wide: true },
-                { label: 'Social', title: 'Cutdowns for social' },
-                { label: 'Photography', title: 'Stills from the shoot' },
-            ],
-            result: 'Placeholder. Once the commercial is out, describe what it accomplished for the business.',
-        },
+},
+{
+    slug: 'late-nights-great-bites',
+    title: 'Late Nights. Great Bites',
+    category: 'In Production',
+    accent: 'light-blue',
+    discipline: 'Commercial Filmmaking',
+    description: 'A late-night food truck commercial celebrating good food, spontaneous adventures, and campus life.',
+    background: '/files/photos/web/700_9651.jpg',
+    heroPosition: 'center 80%', // case study crop: keep the vendors' feet in frame
+    preview: null,
+    video: null,
+    caseStudy: {
+        draft: true,
+        client: 'Colgate Campus Food Trucks',
+        year: '2026',
+        services: ['Commercial Filmmaking'],
+        challenge: 'Campus food trucks offer students a convenient way to satisfy their cravings, but their appeal goes beyond the food itself. The challenge is to make students aware of the experience and encourage them to see the food trucks as part of campus life, particularly during late-night hours.',
+        direction: 'We developed a lighthearted narrative built around two friends immersed in a late-night gaming session. When hunger interrupts their game, one introduces the other to the campus food trucks. Through playful dialogue, relatable college experiences, and a cinematic transition from the cool tones of a gaming room to the warm, inviting atmosphere of the food trucks, the film turns an everyday moment into an entertaining brand story.',
+        execution: [
+            { label: 'Commercial Film', title: 'Late Nights. Great Bites', wide: true },
+            { label: 'Social', title: 'Cutdowns for social' },
+            { label: 'Photography', title: 'Stills from the shoot' },
+        ],
+        resultLabel: 'Creative intent',
+        result: 'The film aims to position campus food trucks as part of the college experience: accessible, welcoming, and there when students need them. By combining humor, relatable storytelling, and appetizing food cinematography, the project demonstrates how a simple everyday situation can become an engaging commercial narrative.',
     },
-    {
-        slug: 'trailhead',
-        title: 'Trailhead',
-        category: 'Self-Initiated Concept',
-        accent: 'light-blue',
-        discipline: 'Integrated Campaign',
-        description: 'Documentary-informed campaign capturing unpolished moments of friends on a weekend adventure.',
-        background: 'https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&q=80&w=2000',
-        preview: null,
-        video: null,
-        caseStudy: {
-            draft: true,
-            client: 'Self-initiated',
-            year: '2026',
-            services: ['Commercial Filmmaking', 'Photography'],
-            challenge: 'Placeholder. What was the campaign trying to communicate? For example: outdoor advertising often feels staged, and the goal was to capture something more honest.',
-            direction: 'Placeholder. Describe the documentary-informed approach: how you shot, what you avoided, and how that shaped the final look.',
-            execution: [
-                { label: 'Campaign Film', title: 'Weekend film', wide: true },
-                { label: 'Photography', title: 'Campaign stills' },
-                { label: 'Social', title: 'Social cutdowns' },
-            ],
-            resultLabel: 'What it explores',
-            result: 'Placeholder. Describe what this project demonstrates about Crescent Studio\'s storytelling approach.',
-        },
+},
+{
+    slug: 'aplos',
+    title: 'Aplos',
+    category: 'Self-Initiated Concept',
+    accent: 'light-blue',
+    discipline: 'Commercial Film',
+    description: 'A 30-second commercial exploring the lifestyle and social appeal of a non-alcoholic beverage.',
+    background: '/files/photos/web/aplosDrinks.jpg',
+    preview: null,
+    video: null,
+    caseStudy: {
+        draft: true,
+        client: 'Self-initiated',
+        year: '2026',
+        services: ['Commercial Filmmaking', 'Photography'],
+        challenge: 'Non-alcoholic beverages have an opportunity to connect with consumers who want more intentional ways to enjoy social experiences. This concept explores how Aplos could be positioned within a younger audience by moving beyond the product itself and focusing on the experiences, connections, and moments it can be part of.',
+        direction: 'We approached Aplos as a lifestyle brand rather than simply a beverage product. The creative direction centers on the idea that great experiences do not depend on alcohol. Through atmospheric imagery, thoughtful compositions, and lifestyle-driven storytelling, the commercial presents the drink as a natural part of moments worth sharing. The visual approach prioritizes mood, authenticity, and the emotional experience surrounding the product.',
+        execution: [
+            { label: 'Campaign Film', title: 'Aplos commercial', wide: true },
+            { label: 'Photography', title: 'Campaign stills' },
+            { label: 'Social', title: 'Social cutdowns' },
+        ],
+        resultLabel: 'What it explores',
+        result: 'A study in lifestyle-driven product advertising and brand positioning. The project demonstrates how a beverage commercial can sell more than a product by connecting it to a particular mindset, social experience, and way of life.',
     },
+},
 ];
 
 export const galleryPhotos = [
@@ -218,7 +219,7 @@ export const contactFields = [
 ];
 
 export const socialLinks = [
-    { href: '#', label: 'IG' },
+    { href: 'https://www.instagram.com/crescent_studio375/', label: 'IG' },
     { href: '#', label: 'IN' },
 ];
 
