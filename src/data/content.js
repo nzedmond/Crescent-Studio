@@ -1,9 +1,12 @@
+// Behind the Scenes is hidden (no nav link, /bts shows 404) until there's real set media; set to true to bring it back
+export const showBts = false;
+
 export const navLinks = [
     { to: '/', label: 'Home' },
     { to: '/about', label: 'About Us' },
     { to: '/work', label: 'Our Work' },
     { to: '/team', label: 'Our Team' },
-    { to: '/bts', label: 'BTS' },
+    ...(showBts ? [{ to: '/bts', label: 'BTS' }] : []),
     { to: '/contact', label: 'Contact' },
 ];
 

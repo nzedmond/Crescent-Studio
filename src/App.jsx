@@ -8,6 +8,7 @@ import Team from './pages/Team';
 import BehindTheScenes from './pages/BehindTheScenes';
 import ContactPage from './pages/ContactPage';
 import NotFound from './pages/NotFound';
+import { showBts } from './data/content';
 
 export default function App() {
     return (
@@ -19,7 +20,7 @@ export default function App() {
                     <Route path="work" element={<OurWork />} />
                     <Route path="work/:slug" element={<CaseStudy />} />
                     <Route path="team" element={<Team />} />
-                    <Route path="bts" element={<BehindTheScenes />} />
+                    {showBts && <Route path="bts" element={<BehindTheScenes />} />}
                     <Route path="contact" element={<ContactPage />} />
                     <Route path="*" element={<NotFound />} />
                 </Route>
