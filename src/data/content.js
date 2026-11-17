@@ -120,7 +120,6 @@ export const projects = [
     preview: '/files/videos/web/colgate-tour-preview.mp4',
     video: '/files/videos/web/colgate-tour.mp4',
     caseStudy: {
-        draft: true,
         client: 'Self-initiated',
         year: '2026',
         services: ['Commercial Filmmaking', 'Photography'],
@@ -146,7 +145,6 @@ export const projects = [
     preview: null,
     video: null,
     caseStudy: {
-        draft: true,
         client: 'Colgate Campus Food Trucks',
         year: '2026',
         services: ['Commercial Filmmaking'],
@@ -172,7 +170,6 @@ export const projects = [
     preview: null,
     video: null,
     caseStudy: {
-        draft: true,
         client: 'Self-initiated',
         year: '2026',
         services: ['Commercial Filmmaking', 'Photography'],
@@ -216,6 +213,7 @@ export const contactFields = [
     { name: 'name', label: 'Your Name', type: 'text' },
     { name: 'company', label: 'Company / Startup Name', type: 'text' },
     { name: 'email', label: 'Email Address', type: 'email' },
+    { name: 'message', label: 'What are you working on? (optional)', type: 'textarea', required: false },
 ];
 
 export const socialLinks = [
